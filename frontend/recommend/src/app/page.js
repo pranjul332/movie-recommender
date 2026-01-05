@@ -23,6 +23,7 @@ export default function Home() {
       const response = await fetch("http://localhost:5000/api/movies/popular");
       const data = await response.json();
       setPopularMovies(data.results?.slice(0, 12) || []);
+      console.log(data);
     } catch (error) {
       console.error("Error fetching popular movies:", error);
     }
