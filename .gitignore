@@ -1,1 +1,3 @@
 aiml-env/
+# ML model artifacts
+*.pkl
